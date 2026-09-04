@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turismo y Emprendimientos · ADI San Juan de Peñas Blancas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <img src="adi-logo.jpg" alt="Logo ADI San Juan de Peñas Blancas" style="width:32px; height:32px; border-radius:50%; object-fit:cover;">
+      <span data-i18n="brand">ADI San Juan de Peñas Blancas</span>
+    </a>
+    <button class="navToggleBtn" id="navToggleBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#1e2a20" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="links" id="navLinks">
+      <a href="index.html" data-i18n="nav_inicio">Inicio</a>
+      <a href="la-adi.html" data-i18n="nav_laadi">La ADI</a>
+      <a href="comunidad.html" data-i18n="nav_comunidad">Nuestra Comunidad</a>
+      <a href="turismo.html" data-i18n="nav_turismo" class="active">Turismo y Emprendimientos</a>
+      <a href="acueducto.html" data-i18n="nav_acueducto">Acueducto</a>
+      <a href="actividades.html" data-i18n="nav_actividades">Actividades</a>
+      <a href="contacto.html" data-i18n="nav_contacto">Contacto</a>
+      <button id="langToggle">EN</button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="page_turismo_eyebrow">Naturaleza y descanso</span>
+    <h1 data-i18n="page_turismo_title">Turismo y Emprendimientos</h1>
+    <p data-i18n="page_turismo_sub">Fincas, hospedajes y negocios locales para conocer nuestra comunidad.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="tour-grid">
+      <div class="tour-card">
+        <div class="tour-img"><img src="finca-esperanza.jpg" alt="Finca La Esperanza"></div>
+        <div class="tour-body">
+          <span class="tag" data-i18n="tour1_tag">Finca</span>
+          <h3>Finca La Esperanza</h3>
+          <p data-i18n="tour1_text">Finca de café y chocolate con tours, senderos y hospedaje, dirigida por la familia Villegas.</p>
+          <div class="tour-links">
+            <a href="https://esperanzacr.com/es/inicio/" target="_blank" rel="noopener" data-i18n="tour_website">Sitio web</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Finca+La+Esperanza+Coffee+and+Chocolate+San+Juan+de+Pe%C3%B1as+Blancas" target="_blank" rel="noopener" data-i18n="tour_maps">Ver en el mapa</a>
+          </div>
+        </div>
+      </div>
+      <div class="tour-card">
+        <div class="tour-img"><svg viewBox="0 0 300 40" preserveAspectRatio="none"><path d="M0 30 Q75 10 150 25 T300 15 L300 40 L0 40 Z" fill="#f8f9f1"/></svg></div>
+        <div class="tour-body">
+          <span class="tag" data-i18n="tour2_tag">Artesanía</span>
+          <h3 data-i18n="tour2_title">El Rincón de la Costura</h3>
+          <p data-i18n="tour2_text">Emprendimiento local de costura y artesanía de la comunidad.</p>
+          <div class="tour-links">
+            <span style="font-size:0.75rem; color:var(--ink-soft); font-style:italic;" data-i18n="tour2_pending">Sitio web y ubicación: pendientes</span>
+          </div>
+        </div>
+      </div>
+      <div class="tour-card">
+        <div class="tour-img"><img src="tierra-valiente.jpg" alt="Hotel Tierra Valiente"></div>
+        <div class="tour-body">
+          <span class="tag" data-i18n="tour3_tag">Hotel</span>
+          <h3>Hotel Tierra Valiente</h3>
+          <p data-i18n="tour3_text">Cooperativa de hospedaje enfocada en agricultura regenerativa y turismo sostenible.</p>
+          <div class="tour-links">
+            <a href="https://www.braveearth.com/" target="_blank" rel="noopener" data-i18n="tour_website">Sitio web</a>
+            <a href="https://www.google.com/maps/place/Brave+Earth+(Tierra+Valiente+S.A.)/@10.3850831,-84.6020625,17z" target="_blank" rel="noopener" data-i18n="tour_maps">Ver en el mapa</a>
+          </div>
+        </div>
+      </div>
+      <div class="tour-card">
+        <div class="tour-img"><img src="luna-nueva.jpg" alt="Finca Luna Nueva Lodge"></div>
+        <div class="tour-body">
+          <span class="tag" data-i18n="tour4_tag">Hotel</span>
+          <h3>Finca Luna Nueva</h3>
+          <p data-i18n="tour4_text">Finca orgánica desde 1994, convertida en eco-lodge en 1999 por sus copropietarios Tom y Terry Newmark.</p>
+          <div class="tour-links">
+            <a href="https://fincalunanuevalodge.com/" target="_blank" rel="noopener" data-i18n="tour_website">Sitio web</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Finca+Luna+Nueva+Lodge+Costa+Rica" target="_blank" rel="noopener" data-i18n="tour_maps">Ver en el mapa</a>
+          </div>
+        </div>
+      </div>
+      <div class="tour-card">
+        <div class="entre-placeholder" style="height:100%; min-height:180px;">
+          <span data-i18n="tour5_text">Próximamente: emprendimientos y cabinas Airbnb de la comunidad, en cuanto confirmemos con cada persona.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="directions-card">
+      <svg viewBox="0 0 40 40" fill="none"><path d="M20 4C13 4 8 9 8 16c0 10 12 20 12 20s12-10 12-20c0-7-5-12-12-12z" stroke="#8b5e3c" stroke-width="2.2"/><circle cx="20" cy="16" r="4" fill="#8b5e3c"/></svg>
+      <div>
+        <p data-i18n="dir_text1"><strong>Cómo llegar:</strong> San Juan de Peñas Blancas está a unos 15 km al sur de La Fortuna, junto al Centro Soltis de Texas A&M, sobre un camino parcialmente pavimentado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <span data-i18n="footer_text">Sitio de la <strong>Asociación de Desarrollo Integral de San Juan de Peñas Blancas</strong> · San Ramón, Alajuela, Costa Rica</span>
+  <br>
+  <a href="mailto:adisanjuandepenasblancas@gmail.com">adisanjuandepenasblancas@gmail.com</a>
+</footer>
+
+<script src="translations.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actividades · ADI San Juan de Peñas Blancas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <img src="adi-logo.jpg" alt="Logo ADI San Juan de Peñas Blancas" style="width:32px; height:32px; border-radius:50%; object-fit:cover;">
+      <span data-i18n="brand">ADI San Juan de Peñas Blancas</span>
+    </a>
+    <button class="navToggleBtn" id="navToggleBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#1e2a20" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="links" id="navLinks">
+      <a href="index.html" data-i18n="nav_inicio">Inicio</a>
+      <a href="la-adi.html" data-i18n="nav_laadi">La ADI</a>
+      <a href="comunidad.html" data-i18n="nav_comunidad">Nuestra Comunidad</a>
+      <a href="turismo.html" data-i18n="nav_turismo">Turismo y Emprendimientos</a>
+      <a href="acueducto.html" data-i18n="nav_acueducto">Acueducto</a>
+      <a href="actividades.html" data-i18n="nav_actividades" class="active">Actividades</a>
+      <a href="contacto.html" data-i18n="nav_contacto">Contacto</a>
+      <button id="langToggle">EN</button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="page_actividades_eyebrow">Agenda comunitaria</span>
+    <h1 data-i18n="page_actividades_title">Próximas Actividades</h1>
+    <p data-i18n="page_actividades_sub">Clases, reuniones y eventos que organizamos en San Juan.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="cal-grid" id="calGrid"><!-- filled by JS --></div>
+  </div>
+</section>
+
+<footer class="site">
+  <span data-i18n="footer_text">Sitio de la <strong>Asociación de Desarrollo Integral de San Juan de Peñas Blancas</strong> · San Ramón, Alajuela, Costa Rica</span>
+  <br>
+  <a href="mailto:adisanjuandepenasblancas@gmail.com">adisanjuandepenasblancas@gmail.com</a>
+</footer>
+
+<script src="translations.js"></script>
+</body>
+</html>

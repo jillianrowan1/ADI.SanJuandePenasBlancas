@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestra Comunidad · ADI San Juan de Peñas Blancas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <img src="adi-logo.jpg" alt="Logo ADI San Juan de Peñas Blancas" style="width:32px; height:32px; border-radius:50%; object-fit:cover;">
+      <span data-i18n="brand">ADI San Juan de Peñas Blancas</span>
+    </a>
+    <button class="navToggleBtn" id="navToggleBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#1e2a20" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="links" id="navLinks">
+      <a href="index.html" data-i18n="nav_inicio">Inicio</a>
+      <a href="la-adi.html" data-i18n="nav_laadi">La ADI</a>
+      <a href="comunidad.html" data-i18n="nav_comunidad" class="active">Nuestra Comunidad</a>
+      <a href="turismo.html" data-i18n="nav_turismo">Turismo y Emprendimientos</a>
+      <a href="acueducto.html" data-i18n="nav_acueducto">Acueducto</a>
+      <a href="actividades.html" data-i18n="nav_actividades">Actividades</a>
+      <a href="contacto.html" data-i18n="nav_contacto">Contacto</a>
+      <button id="langToggle">EN</button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="page_comunidad_eyebrow">San Juan de Peñas Blancas</span>
+    <h1 data-i18n="page_comunidad_title">Nuestra Comunidad</h1>
+    <p data-i18n="page_comunidad_sub">Nuestra historia, nuestra gente, y algunos números que nos describen.</p>
+  </div>
+</div>
+
+<!-- ================= HISTORIA ================= -->
+<section id="historia">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="historia_eyebrow">Nuestras raíces</span>
+      <h2 data-i18n="historia_title">Historia</h2>
+      <p data-i18n="historia_intro">Las primeras familias llegaron a San Juan alrededor de 1946, abriendo camino y construyendo las primeras viviendas. Cruzar el río Peñas Blancas era todo un reto: primero se hacía en andarivel, luego por un puente hamaca, hasta que finalmente se construyó un puente de cemento.</p>
+    </div>
+    <ul class="timeline" id="timelineList" style="max-width:640px;"><!-- filled by JS --></ul>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="photo-band">
+    <img src="waterfall.jpg" alt="Catarata cerca de San Juan de Peñas Blancas">
+    <img src="hero-mountains.jpg" alt="Montañas y bosque de San Juan de Peñas Blancas">
+    <img src="cows.jpg" alt="Ganado en San Juan de Peñas Blancas">
+  </div>
+</div>
+
+<!-- ================= SAN JUAN EN NÚMEROS ================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 data-i18n="numeros_title">San Juan en Números</h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card"><span class="val" data-i18n="fact1_v">Alajuela</span><span class="lbl" data-i18n="fact1_k">Provincia</span></div>
+      <div class="stat-card"><span class="val" data-i18n="fact2_v">San Ramón</span><span class="lbl" data-i18n="fact2_k">Cantón</span></div>
+      <div class="stat-card"><span class="val" data-i18n="fact3_v">~1946</span><span class="lbl" data-i18n="fact3_k">Fundada</span></div>
+      <div class="stat-card"><span class="val" data-i18n="fact4_v">~379</span><span class="lbl" data-i18n="fact4_k">Habitantes</span></div>
+      <div class="stat-card"><span class="val" data-i18n="fact5_v">62%</span><span class="lbl" data-i18n="fact5_k">Bosque protegido</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCACION ================= -->
+<section id="educacion">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="edu_eyebrow">Educación en San Juan</span>
+      <h2 data-i18n="edu_title">Educación</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="stripe"></div>
+        <div class="body">
+          <h3 data-i18n="edu1_title">Kínder</h3>
+          <p data-i18n="edu1_text">Funciona dentro de la Escuela Emilio Castro Gómez, atendiendo a los niños y niñas en edad preescolar de la comunidad.</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="stripe"></div>
+        <div class="body">
+          <h3 data-i18n="edu2_title">Escuela Emilio Castro Gómez</h3>
+          <p data-i18n="edu2_text">Abrió sus puertas en 1987 y atiende de primero a sexto grado, en horario de la mañana.</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <img class="edu-photo" src="liceo-mural.jpg" alt="Mural del Liceo Rural San Juan P.B.">
+        <div class="body">
+          <h3 data-i18n="edu3_title">Liceo Rural de San Juan</h3>
+          <p data-i18n="edu3_text">Abrió en 2006 y ofrece educación secundaria de sétimo a onceavo año, con talleres socio-productivos y un mariposario construido por los propios estudiantes en 2022.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GENTE DE SAN JUAN ================= -->
+<section class="alt" id="gente">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow" data-i18n="spot_eyebrow">Gente de San Juan</span>
+      <h2 data-i18n="spot_title">Persona Destacada</h2>
+    </div>
+    <div class="spotlight-grid">
+      <div class="spotlight-quote-card">
+        <p class="spot-quote" data-i18n="spot1_quote">"La vida en una comunidad rural nos enseña que la riqueza no siempre se mide en dinero, sino en solidaridad. Aquí un vecino no es solo alguien que vive cerca, es familia. Aquí el esfuerzo diario tiene el aroma a café recién hecho y el sonido del viento entre los árboles."</p>
+        <span class="spot-attr">— Ligia Villegas Trejos, Finca La Esperanza</span>
+      </div>
+      <div class="spotlight-quote-card">
+        <p class="spot-quote" data-i18n="spot2_quote">"El lugar más lindo del mundo."</p>
+        <span class="spot-attr">— Álvaro Castro</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <span data-i18n="footer_text">Sitio de la <strong>Asociación de Desarrollo Integral de San Juan de Peñas Blancas</strong> · San Ramón, Alajuela, Costa Rica</span>
+  <br>
+  <a href="mailto:adisanjuandepenasblancas@gmail.com">adisanjuandepenasblancas@gmail.com</a>
+</footer>
+
+<script src="translations.js"></script>
+</body>
+</html>
