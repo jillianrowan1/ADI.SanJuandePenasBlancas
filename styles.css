@@ -167,13 +167,32 @@ section.alt .timeline li::before{border-color:var(--bg-alt);}
 .stat-card .val{font-family:'Fraunces', serif; font-size:1.9rem; font-weight:600; display:block; color:#fff;}
 .stat-card .lbl{font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase; color:rgba(248,249,241,0.75); display:block; margin-top:6px;}
 
-/* ---------- ADI OFFICE (¿Qué es la ADI?) ---------- */
-.adi-office{
-  display:flex; gap:28px; align-items:center; margin-bottom:36px; flex-wrap:wrap;
+/* ---------- ADI OFFICE ---------- */
+.adi-office {
+  text-align: center;
+  margin-bottom: 36px;
 }
-.adi-office p{color:var(--ink-soft); font-size:0.96rem; margin:0; flex:1; min-width:240px; line-height:1.6;}
-.adi-office img.oficina{
-  width:260px; border-radius:var(--radius); flex-shrink:0; object-fit:cover;
+
+.adi-office figure {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.adi-office img.oficina {
+  width: 260px;
+  border-radius: var(--radius);
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.adi-office figcaption {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 8px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 /* ---------- BOARD ---------- */
