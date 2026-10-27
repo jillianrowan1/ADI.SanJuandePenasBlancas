@@ -88,11 +88,68 @@
   </div>
 </section>
 
-<footer class="site">
-  <span data-i18n="footer_text">Sitio de la <strong>Asociación de Desarrollo Integral de San Juan de Peñas Blancas</strong> · San Ramón, Alajuela, Costa Rica</span>
-  <br>
-  <a href="mailto:adisanjuandepenasblancas@gmail.com">adisanjuandepenasblancas@gmail.com</a>
-</footer>
+footer.site {
+  background: #1f3327;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 42px 28px;
+  border: none;
+  text-align: left;
+  font-size: 0.88rem;
+}
+
+.footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-brand img {
+  width: 58px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.footer-brand span {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fraunces', serif;
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.footer-location strong,
+.footer-contact strong {
+  display: block;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-location p {
+  margin: 3px 0;
+}
+
+.footer-contact a {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 6px 0;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #e6c77a;
+}
 
 <script src="translations.js"></script>
 </body>
