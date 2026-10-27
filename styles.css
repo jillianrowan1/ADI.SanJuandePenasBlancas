@@ -47,34 +47,50 @@ a{color:var(--river-deep);}
 img{max-width:100%; display:block;}
 
 /* ---------- NAV ---------- */
-header.site{
-  position:sticky; top:0; z-index:50;
-  background:rgba(238,241,228,0.94);
-  backdrop-filter:blur(6px);
-  border-bottom:1px solid var(--line);
+header.site {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: rgba(25, 42, 31, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 .nav{
   display:flex; align-items:center; justify-content:space-between;
   padding:14px 28px; max-width:var(--maxw); margin:0 auto;
+.brand {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-.brand{
-  font-family:'Fraunces', serif; font-weight:600; font-size:1.1rem;
-  color:var(--forest-deep); text-decoration:none;
-  display:flex; align-items:center; gap:10px;
+
+.brand img {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50%;
+  object-fit: cover;
 }
-nav.links{display:flex; gap:20px; align-items:center; flex-wrap:wrap;}
-nav.links a{
-  font-size:0.86rem; text-decoration:none; color:var(--ink-soft);
-  font-weight:500; padding:4px 2px; border-bottom:2px solid transparent;
-  transition:border-color .15s ease, color .15s ease;
+
+nav.links a {
+  font-size: 0.86rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 4px 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
 }
-nav.links a:hover{color:var(--forest-deep); border-color:var(--toucan);}
-nav.links a.active{color:var(--forest-deep); border-color:var(--forest);}
-#langToggle{
-  font-family:'IBM Plex Mono', monospace; font-size:0.78rem;
-  background:var(--forest); color:var(--paper); border:none;
-  padding:7px 12px; border-radius:20px; cursor:pointer;
-  letter-spacing:0.05em;
+
+nav.links a:hover,
+nav.links a.active {
+  color: #fff;
+  border-color: var(--gold);
 }
 #langToggle:hover{background:var(--forest-deep);}
 .navToggleBtn{display:none; background:none; border:none; cursor:pointer;}
