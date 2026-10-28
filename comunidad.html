@@ -21,11 +21,27 @@
     </button>
     <nav class="links" id="navLinks">
       <a href="index.html" data-i18n="nav_inicio">Inicio</a>
+      <div class="nav-dropdown active">
+        <div class="nav-dropdown-main">
+          <a href="comunidad.html" data-i18n="nav_comunidad" class="active">Nuestra Comunidad</a>
+          <button type="button" class="dropdown-toggle" aria-label="Abrir menú de Nuestra Comunidad" aria-expanded="false">▾</button>
+        </div>
+        <div class="dropdown-menu">
+          <a href="actividades.html" data-i18n="nav_actividades">Actividades</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <div class="nav-dropdown-main">
+          <a href="turismo.html" data-i18n="nav_explore">Descubra San Juan</a>
+          <button type="button" class="dropdown-toggle" aria-label="Abrir menú de Descubra San Juan" aria-expanded="false">▾</button>
+        </div>
+        <div class="dropdown-menu">
+          <a href="turismo.html#turismo" data-i18n="nav_turismo">Turismo</a>
+          <a href="turismo.html#emprendimientos" data-i18n="nav_emprendimientos">Emprendimientos locales</a>
+        </div>
+      </div>
       <a href="la-adi.html" data-i18n="nav_laadi">La ADI</a>
-      <a href="comunidad.html" data-i18n="nav_comunidad" class="active">Nuestra Comunidad</a>
-      <a href="turismo.html" data-i18n="nav_turismo">Turismo y Emprendimientos</a>
       <a href="acueducto.html" data-i18n="nav_acueducto">Acueducto</a>
-      <a href="actividades.html" data-i18n="nav_actividades">Actividades</a>
       <a href="contacto.html" data-i18n="nav_contacto">Contacto</a>
       <button id="langToggle">EN</button>
     </nav>

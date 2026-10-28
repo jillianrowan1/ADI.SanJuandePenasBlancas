@@ -69,8 +69,11 @@ const I18N = {
   es: {
     brand:"ADI San Juan de Peñas Blancas",
     nav_inicio:"Inicio", nav_laadi:"La ADI", nav_comunidad:"Nuestra Comunidad",
-    nav_turismo:"Turismo y Emprendimientos", nav_acueducto:"Acueducto",
+    nav_explore:"Descubra San Juan", nav_turismo:"Turismo",
+    nav_emprendimientos:"Emprendimientos locales", nav_acueducto:"Acueducto",
     nav_actividades:"Actividades", nav_contacto:"Contacto",
+    tourism_section_title:"Turismo y hospedaje",
+    businesses_section_title:"Emprendimientos locales",
     langBtn:"EN", dl:"Descargar",
 
     footer_text:'Sitio de la <strong>Asociación de Desarrollo Integral de San Juan de Peñas Blancas</strong> · San Ramón, Alajuela, Costa Rica',
@@ -132,8 +135,8 @@ const I18N = {
     spot2_quote:"\"El lugar más lindo del mundo.\"",
 
     // ---- TURISMO Y EMPRENDIMIENTOS ----
-    page_turismo_eyebrow:"Naturaleza y descanso", page_turismo_title:"Turismo y Emprendimientos",
-    page_turismo_sub:"Fincas, hospedajes y negocios locales para conocer nuestra comunidad.",
+    page_turismo_eyebrow:"Naturaleza y descanso", page_turismo_title:"Descubra San Juan: Turismo y Emprendimientos Locales",
+    page_turismo_sub:"Conozca los lugares para visitar, hospedajes y emprendimientos de nuestra comunidad.",
     tour1_tag:"Finca", tour1_text:"Finca de café y chocolate con tours, senderos y hospedaje, dirigida por la familia Villegas.",
     tour2_tag:"Artesanía", tour2_title:"El Rincón de la Costura", tour2_text:"Emprendimiento local de costura y artesanía de la comunidad.",
     tour3_tag:"Hotel", tour3_text:"Cooperativa de hospedaje enfocada en agricultura regenerativa y turismo sostenible.",
@@ -167,8 +170,11 @@ const I18N = {
   en: {
     brand:"ADI San Juan de Peñas Blancas",
     nav_inicio:"Home", nav_laadi:"The ADI", nav_comunidad:"Our Community",
-    nav_turismo:"Tourism & Businesses", nav_acueducto:"Aqueduct",
+    nav_explore:"Explore San Juan", nav_turismo:"Tourism",
+    nav_emprendimientos:"Local Businesses", nav_acueducto:"Water Service",
     nav_actividades:"Activities", nav_contacto:"Contact",
+    tourism_section_title:"Tourism & Lodging",
+    businesses_section_title:"Local Businesses",
     langBtn:"ES", dl:"Download",
 
     footer_text:'Website of the <strong>Asociación de Desarrollo Integral de San Juan de Peñas Blancas</strong> · San Ramón, Alajuela, Costa Rica',
@@ -230,8 +236,8 @@ const I18N = {
     spot2_quote:"\"The most beautiful place in the world.\"",
 
     // ---- TOURISM & BUSINESSES ----
-    page_turismo_eyebrow:"Nature & rest", page_turismo_title:"Tourism & Businesses",
-    page_turismo_sub:"Farms, lodging, and local businesses worth visiting.",
+    page_turismo_eyebrow:"Nature & rest", page_turismo_title:"Explore San Juan: Tourism & Local Businesses",
+    page_turismo_sub:"Discover places to visit, places to stay, and local businesses in our community.",
     tour1_tag:"Farm", tour1_text:"A coffee and chocolate farm with tours, trails, and lodging, run by a family from the community.",
     tour2_tag:"Craft", tour2_title:"El Rincón de la Costura", tour2_text:"A local sewing and craft business from the community.",
     tour3_tag:"Hotel", tour3_text:"A lodging cooperative focused on regenerative agriculture and sustainable tourism.",
@@ -350,6 +356,14 @@ function initLangToggle(){
       navLinks.classList.toggle("open");
     });
   }
+  document.querySelectorAll(".dropdown-toggle").forEach(button=>{
+    button.addEventListener("click", ()=>{
+      const dropdown = button.closest(".nav-dropdown");
+      if(!dropdown) return;
+      const isOpen = dropdown.classList.toggle("open");
+      button.setAttribute("aria-expanded", String(isOpen));
+    });
+  });
 }
 
 /* ---------------- CONTACT FORM (contacto.html only) ---------------- */
