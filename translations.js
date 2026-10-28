@@ -73,6 +73,7 @@ const I18N = {
     nav_emprendimientos:"Emprendimientos locales", nav_acueducto:"Acueducto",
     nav_actividades:"Actividades", nav_contacto:"Contacto",
     tourism_section_title:"Turismo y hospedaje",
+    businesses_section_title:"Emprendimientos locales",
     langBtn:"EN", dl:"Descargar",
 
     footer_text:'Sitio de la <strong>Asociación de Desarrollo Integral de San Juan de Peñas Blancas</strong> · San Ramón, Alajuela, Costa Rica',
@@ -173,6 +174,7 @@ const I18N = {
     nav_emprendimientos:"Local Businesses", nav_acueducto:"Water Service",
     nav_actividades:"Activities", nav_contacto:"Contact",
     tourism_section_title:"Tourism & Lodging",
+    businesses_section_title:"Local Businesses",
     langBtn:"ES", dl:"Download",
 
     footer_text:'Website of the <strong>Asociación de Desarrollo Integral de San Juan de Peñas Blancas</strong> · San Ramón, Alajuela, Costa Rica',
