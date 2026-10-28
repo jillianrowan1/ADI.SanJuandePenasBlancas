@@ -91,7 +91,7 @@ nav.links a.active{color:var(--forest-deep); border-color:var(--forest);}
   overflow:hidden;
   background:
     linear-gradient(180deg, rgba(20,32,24,0.62), rgba(20,32,24,0.8)),
-    url('hero-sign.jpg') center 35% / cover no-repeat;
+    url('hero-sign.JPEG') center 35% / cover no-repeat;
   padding-top:0;
 }
 .hero::after{
