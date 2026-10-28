@@ -186,11 +186,15 @@ section.alt .timeline li::before{border-color:var(--bg-alt);}
 }
 
 .adi-office img.oficina {
-  width: 260px;
+  width: 100%;
+  height: clamp(240px, 38vw, 430px);
   border-radius: var(--radius);
   object-fit: cover;
+  object-position: center;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto 0;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 22%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 22%);
 }
 
 .adi-office figcaption {
